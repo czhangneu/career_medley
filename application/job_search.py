@@ -1,4 +1,4 @@
-__author__ = 'onyeka'
+__author__ = ['onyekaigabari', 'Chi']
 import json
 from config import PUBLISHER
 from indeedapi import IndeedClient

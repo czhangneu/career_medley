@@ -1,4 +1,4 @@
-__author__ = 'onyekaigabari'
+__author__ = ['onyekaigabari', 'Chi']
 
 import requests
 

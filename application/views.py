@@ -1,5 +1,5 @@
 #!/usr/bin/python
-__author__ = 'onyekaigabari'
+__author__ = ['onyekaigabari', 'Chi']
 
 from flask import render_template, flash, \
     redirect, g, url_for, request, session, send_from_directory

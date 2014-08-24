@@ -1,4 +1,4 @@
-__author__ = 'onyekaigabari'
+__author__ = ['onyekaigabari', 'Chi']
 
 
 from hashlib import md5
@@ -159,6 +159,20 @@ class Employer(db.Model):
 
     def __repr__(self):
         return '<Employer: %s>' % (self.employer_name)
+
+class Favorite_employer(db.Model):
+    id = db.Column(db.Integer, db.ForeignKey('user.id'), primary_key=True)
+    employer_name = db.Column(db.String(MEDIUM_STR_LEN), primary_key=True)
+
+    user = db.relationship('User', backref=db.backref('favorite_employer', lazy='dynamic'))
+    employer = db.relationship(Employer, backref=db.backref('favorite_employer', lazy='dynamic'))
+
+    def __init__(self, id, employer_name):
+        self.id = id
+        self.employer_name = employer_name
+
+    def __repr__(self):
+        return '<Favorite_employer | id: %s, employer: %s>' % (str(self.id), self.employer_name)
 
 # ---------------------------------------------------------------------------------------------------
 # create index for table: Position

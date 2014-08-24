@@ -1,5 +1,4 @@
-
-__author__ = 'onyekaigabari'
+__author__ = ['onyekaigabari', 'Chi']
 
 from application import app
 app.run(debug=True)

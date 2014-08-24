@@ -1,4 +1,4 @@
-__author__ = 'onyekaigabari'
+__author__ = ['onyekaigabari', 'Chi']
 
 from flask_wtf import Form
 from wtforms import StringField, SubmitField, PasswordField, BooleanField

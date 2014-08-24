@@ -1,5 +1,5 @@
 #!/flask/bin/python
-__author__ = 'onyekaigabari'
+__author__ = ['onyekaigabari', 'Chi']
 
 # need to install SQLAlchemy-migrate
 from migrate.versioning import api
